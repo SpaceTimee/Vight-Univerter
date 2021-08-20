@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <ApplicationIcon>Vight Univerter Logo 256x256.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Version>0.0.0</Version>
+    <Authors>Space Time</Authors>
+    <Company>Space Time</Company>
+    <PackageIcon>Vight Univerter Logo 256x256.png</PackageIcon>
+    <PackageIconUrl />
+    <NeutralLanguage>zh-CN</NeutralLanguage>
+    <PackageReleaseNotes>~</PackageReleaseNotes>
+    <Copyright>Copyright ©  2077</Copyright>
+    <Description>~</Description>
+    <PackageLicenseFile>Vight Univerter Privacy Policy.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://www.spacetimee.xyz</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/SpaceTimee/Vight-Univerter</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageId>SpaceTime.Vight.Univerter</PackageId>
+    <PackageTags>SpaceTime;Vight;Note;Vight-Univerter</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Pages\UniverterPage.xaml.cs">
+      <DependentUpon>UniverterPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Pages\TabPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\Space Time\Desktop\Vight Univerter\Vight Univerter Logo 0.0.0\Vight Univerter Logo 256x256.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="C:\Users\Space Time\Desktop\Vight Univerter\Vight Univerter Privacy Policy.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
