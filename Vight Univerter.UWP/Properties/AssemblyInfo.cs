@@ -4,13 +4,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Vight_Univerter.UWP")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Vight Univerter")]
+[assembly: AssemblyDescription("I am simply a Unit Converter")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Vight_Univerter.UWP")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCompany("Space Time")]
+[assembly: AssemblyProduct("Vight Univerter")]
+[assembly: AssemblyCopyright("Copyright ©  2077")]
+[assembly: AssemblyTrademark("Space Time")]
 [assembly: AssemblyCulture("")]
 
 // Version information for an assembly consists of the following four values:

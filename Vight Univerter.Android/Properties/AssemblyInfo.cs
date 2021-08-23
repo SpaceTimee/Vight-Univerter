@@ -6,7 +6,7 @@ using Android.App;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Vight Univerter")]
-[assembly: AssemblyDescription("~")]
+[assembly: AssemblyDescription("I am simply a Unit Converter")]
 [assembly: AssemblyConfiguration("Release")]
 [assembly: AssemblyCompany("Space Time")]
 [assembly: AssemblyProduct("Vight Univerter")]
@@ -21,8 +21,8 @@ using Android.App;
 //      Minor Version 
 //      Build Number
 //      Revision
-[assembly: AssemblyVersion("0.0.0")]
-[assembly: AssemblyFileVersion("0.0.0")]
+[assembly: AssemblyVersion("1.0.0")]
+[assembly: AssemblyFileVersion("1.0.0")]
 
 // Add some common permissions, these can be removed if not needed
 [assembly: UsesPermission(Android.Manifest.Permission.WriteExternalStorage)]

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vight_Univerter.AboutPage"
+             BackgroundColor="{AppThemeBinding White,Light=White,Dark=Black}">
+    <Grid VerticalOptions="Center" Margin="20,0"
+          ColumnSpacing="0" RowSpacing="15" BackgroundColor="{AppThemeBinding White,Light=White,Dark=Black}"
+          IsTabStop="False">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center"
+               FontSize="30" TextColor="{AppThemeBinding Black,Light=Black,Dark=White}" Text="Vight Univerter"/>
+        <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+               FontSize="16" TextColor="{AppThemeBinding Black,Light=Black,Dark=White}" Text="开发者: Space Time" Margin="10,0,10,0"/>
+        <Label x:Name="VersionLabel" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+               FontSize="16" TextColor="{AppThemeBinding Black,Light=Black,Dark=White}" Text="版本号: ?.?.?" Margin="10,0,10,0"/>
+        <Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+               FontSize="16" TextColor="{AppThemeBinding Black,Light=Black,Dark=White}" Text="作者主页: https://www.spacetimee.xyz/" Margin="10,0,10,0">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="MainPageLabel_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+               FontSize="16" TextColor="{AppThemeBinding Black,Light=Black,Dark=White}" Text="开源地址: https://github.com/SpaceTimee/Vight-Univerter" Margin="10,0,10,0">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OpenSourceLabel_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+               FontSize="16" TextColor="{AppThemeBinding Black,Light=Black,Dark=White}" Text="联系邮箱: Zeus6_6@163.com" Margin="10,0,10,0">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="EmailLabel_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+    </Grid>
+</ContentPage>

@@ -10,4 +10,5 @@
     <local:UniverterPage Title="量" basicUnitName="摩" basicUnitSymbol="mol"/>    <!--已完成-->
     <local:UniverterPage Title="温度" basicUnitName="开" basicUnitSymbol="K"/>
     <local:UniverterPage Title="光强" basicUnitName="坎" basicUnitSymbol="cd"/>    <!--已完成-->
+    <local:AboutPage x:Name="aboutPage" Title="关于"/>
 </TabbedPage>

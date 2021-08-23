@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vight Univerter.Android", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vight Univerter.iOS", "Vight Univerter.iOS\Vight Univerter.iOS.csproj", "{1135DD73-AA1C-47EC-A23E-112B8A0994EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vight Univerter", "Vight Univerter\Vight Univerter.csproj", "{D6B5BBE9-0897-49AC-90E3-B477627D1BB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vight Univerter", "Vight Univerter\Vight Univerter.csproj", "{D6B5BBE9-0897-49AC-90E3-B477627D1BB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
