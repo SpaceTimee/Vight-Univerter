@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Vight_Univerter
@@ -11,7 +10,7 @@ namespace Vight_Univerter
         public string basicUnitName { get; set; } = "";
         public string basicUnitSymbol { get; set; } = "";
         private readonly Dictionary<string, double> Units = new Dictionary<string, double>();
-        public static readonly object[,] NumUnits = new object[,]
+        private static readonly object[,] NumUnits = new object[,]
         {
             { "幺","(y" , 1 },
             { "仄","(z", 1e3 },
@@ -95,7 +94,7 @@ namespace Vight_Univerter
                     { "年代(D)", 3.1104e32 },
                     { "甲子(jz)", 1.86624e33 },
                     { "世纪(C)", 3.1104e33 },
-                    { "千年(ka)", 3.1104e34 },
+                    { "千纪(ka)", 3.1104e34 },
                     { "银河年(GY)", 7.46496e39 }
                 }
             },  //时间
@@ -126,35 +125,32 @@ namespace Vight_Univerter
         {
             InitializeComponent();
         }
-        public void InitPickerList()
+        internal void InitPickerList()
         {
-            Task.Factory.StartNew
-            (
-                () =>
-                {
-                    for (int i = 0; i != 22; ++i)
+            int j = 0;
+            foreach (var i in OtherUnits[Title])
+                while (true)
+                    if (i.Value < Convert.ToDouble(NumUnits[j, 2]) || j == 22)
                     {
-                        string key = NumUnits[i, 0] + basicUnitName + NumUnits[i, 1] + basicUnitSymbol + ")";
-                        inputUnitPicker.Items.Add(key);
-                        resultUnitPicker.Items.Add(key);
-
-                        Units.Add(key, Convert.ToDouble(NumUnits[i, 2]));
+                        AddKey(i.Key, i.Value);
+                        break;
                     }
-
-                    int j = 0, k = 0;
-                    foreach (var i in OtherUnits[Title])
+                    else
                     {
-                        for (; j != 22 + OtherUnits[Title].Count && i.Value >= Convert.ToDouble(NumUnits[j, 2]); ++j) { }
-
-                        inputUnitPicker.Items.Insert(j + k, i.Key);
-                        resultUnitPicker.Items.Insert(j + k, i.Key);
-
-                        Units.Add(i.Key, i.Value);
-
-                        ++k;
+                        AddKey(NumUnits[j, 0] + basicUnitName + NumUnits[j, 1] + basicUnitSymbol + ")", Convert.ToDouble(NumUnits[j, 2]));
+                        ++j;
                     }
-                }
-            );
+            while (j != 22)
+            {
+                AddKey(NumUnits[j, 0] + basicUnitName + NumUnits[j, 1] + basicUnitSymbol + ")", Convert.ToDouble(NumUnits[j, 2]));
+                ++j;
+            }
+        }
+        private void AddKey(string key, double value)
+        {
+            inputUnitPicker.Items.Add(key);
+            resultUnitPicker.Items.Add(key);
+            Units.Add(key, value);
         }
 
         private void inputEntry_TextChanged(object sender, TextChangedEventArgs e)
@@ -171,7 +167,7 @@ namespace Vight_Univerter
         }
 
         //转换
-        public void Univert()
+        private void Univert()
         {
             if (inputEntry.Text == null || inputEntry.Text == "" || inputUnitPicker.SelectedItem == null || resultUnitPicker.SelectedItem == null || !Regex.IsMatch(inputEntry.Text, @"^[+-]?\d+[.]?\d*$"))
             {

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31515.178
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vight Univerter.UWP", "Vight Univerter.UWP\Vight Univerter.UWP.csproj", "{48CA7DD3-CFDE-419B-90CA-CF54DEF087D1}"
 EndProject
@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vight Univerter.Android", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vight Univerter.iOS", "Vight Univerter.iOS\Vight Univerter.iOS.csproj", "{1135DD73-AA1C-47EC-A23E-112B8A0994EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vight Univerter", "Vight Univerter\Vight Univerter.csproj", "{D6B5BBE9-0897-49AC-90E3-B477627D1BB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vight Univerter", "Vight Univerter\Vight Univerter.csproj", "{D6B5BBE9-0897-49AC-90E3-B477627D1BB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
