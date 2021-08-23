@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Vight_Univerter
@@ -128,33 +127,27 @@ namespace Vight_Univerter
         }
         public void InitPickerList()
         {
-            Task.Factory.StartNew
-            (
-                () =>
-                {
-                    for (int i = 0; i != 22; ++i)
-                    {
-                        string key = NumUnits[i, 0] + basicUnitName + NumUnits[i, 1] + basicUnitSymbol + ")";
-                        inputUnitPicker.Items.Add(key);
-                        resultUnitPicker.Items.Add(key);
+            for (int i = 0; i != 22; ++i)
+            {
+                string key = NumUnits[i, 0] + basicUnitName + NumUnits[i, 1] + basicUnitSymbol + ")";
+                inputUnitPicker.Items.Add(key);
+                resultUnitPicker.Items.Add(key);
 
-                        Units.Add(key, Convert.ToDouble(NumUnits[i, 2]));
-                    }
+                Units.Add(key, Convert.ToDouble(NumUnits[i, 2]));
+            }
 
-                    int j = 0, k = 0;
-                    foreach (var i in OtherUnits[Title])
-                    {
-                        for (; j != 22 + OtherUnits[Title].Count && i.Value >= Convert.ToDouble(NumUnits[j, 2]); ++j) { }
+            int j = 0, k = 0;
+            foreach (var i in OtherUnits[Title])
+            {
+                for (; j != 22 + OtherUnits[Title].Count && i.Value >= Convert.ToDouble(NumUnits[j, 2]); ++j) { }
 
-                        inputUnitPicker.Items.Insert(j + k, i.Key);
-                        resultUnitPicker.Items.Insert(j + k, i.Key);
+                inputUnitPicker.Items.Insert(j + k, i.Key);
+                resultUnitPicker.Items.Insert(j + k, i.Key);
 
-                        Units.Add(i.Key, i.Value);
+                Units.Add(i.Key, i.Value);
 
-                        ++k;
-                    }
-                }
-            );
+                ++k;
+            }
         }
 
         private void inputEntry_TextChanged(object sender, TextChangedEventArgs e)

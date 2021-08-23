@@ -1,11 +1,9 @@
 ﻿<forms:WindowsPage
-    x:Class="Vight_Univerter.UWP.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:forms="using:Xamarin.Forms.Platform.UWP"
+    x:Class="Vight_Univerter.UWP.MainPage"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Vight_Univerter.UWP"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     </Grid>

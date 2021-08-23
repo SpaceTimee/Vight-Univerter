@@ -1,5 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="0.0.0" package="SpaceTime.Vight.Univerter" android:installLocation="auto">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="010000" android:versionName="1.0.0" package="SpaceTime.Vight.Univerter" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="22" android:targetSdkVersion="30" />
 	<application android:label="Vight Univerter" android:theme="@style/MainTheme" android:icon="@mipmap/Vight_Univerter_Logo"></application>
+	<queries>
+		<intent>
+			<action android:name="android.intent.action.VIEW" />
+			<data android:scheme="http" />
+		</intent>
+		<intent>
+			<action android:name="android.intent.action.VIEW" />
+			<data android:scheme="https" />
+		</intent>
+		<intent>
+			<action android:name="android.intent.action.SENDTO" />
+			<data android:scheme="mailto" />
+		</intent>
+	</queries>
 </manifest>

@@ -9,16 +9,12 @@ namespace Vight_Univerter
         {
             InitializeComponent();
 
-            Task.Factory.StartNew
-            (
-                () =>
-                {
-                    foreach (var i in Children)
-                    {
-                        (i as UniverterPage).InitPickerList();
-                    }
-                }
-            );
+            //必须在初始化之后才能确定每个UniverterPage是分别什么功能
+            foreach (var i in Children)
+            {
+                if (i.GetType() != typeof(AboutPage))
+                    Task.Run((i as UniverterPage).InitPickerList);
+            }
         }
     }
 }
