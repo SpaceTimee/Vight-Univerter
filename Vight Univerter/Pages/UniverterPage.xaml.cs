@@ -10,7 +10,7 @@ namespace Vight_Univerter
         public string basicUnitName { get; set; } = "";
         public string basicUnitSymbol { get; set; } = "";
         private readonly Dictionary<string, double> Units = new Dictionary<string, double>();
-        public static readonly object[,] NumUnits = new object[,]
+        private static readonly object[,] NumUnits = new object[,]
         {
             { "幺","(y" , 1 },
             { "仄","(z", 1e3 },
@@ -125,7 +125,7 @@ namespace Vight_Univerter
         {
             InitializeComponent();
         }
-        public void InitPickerList()
+        internal void InitPickerList()
         {
             int j = 0;
             foreach (var i in OtherUnits[Title])
@@ -146,7 +146,7 @@ namespace Vight_Univerter
                 ++j;
             }
         }
-        public void AddKey(string key, double value)
+        private void AddKey(string key, double value)
         {
             inputUnitPicker.Items.Add(key);
             resultUnitPicker.Items.Add(key);
@@ -167,7 +167,7 @@ namespace Vight_Univerter
         }
 
         //转换
-        public void Univert()
+        private void Univert()
         {
             if (inputEntry.Text == null || inputEntry.Text == "" || inputUnitPicker.SelectedItem == null || resultUnitPicker.SelectedItem == null || !Regex.IsMatch(inputEntry.Text, @"^[+-]?\d+[.]?\d*$"))
             {

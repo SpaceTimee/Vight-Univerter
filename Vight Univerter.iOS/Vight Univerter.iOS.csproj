@@ -11,7 +11,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Vight_Univerter.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Vight-Univerter.iOS</AssemblyName>
+    <AssemblyName>Vight Univerter iOS</AssemblyName>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <ProvisioningType>automatic</ProvisioningType>
