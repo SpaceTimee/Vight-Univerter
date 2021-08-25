@@ -17,8 +17,8 @@
 2. [使用协议](https://thoughts.teambition.com/share/6125ed0b936efe0041167563#title=Vight_Univerter_使用协议)
 
 ## 下载地址:
-
-Github: [https://github.com/SpaceTimee/Vight-Univerter/releases](https://github.com/SpaceTimee/Vight-Univerter/releases)
+1. Github (首选): [https://github.com/SpaceTimee/Vight-Univerter/releases](https://github.com/SpaceTimee/Vight-Univerter/releases)
+2. 蓝奏云 (密码4lxf) (大陆推荐): [https://spacetime.lanzoui.com/b016o1zra](https://spacetime.lanzoui.com/b016o1zra)
 
 ## 安装方式:
 1. Android APK安装包: Android端正常打开即可安装
