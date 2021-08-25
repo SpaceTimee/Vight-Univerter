@@ -127,27 +127,30 @@ namespace Vight_Univerter
         }
         public void InitPickerList()
         {
-            for (int i = 0; i != 22; ++i)
-            {
-                string key = NumUnits[i, 0] + basicUnitName + NumUnits[i, 1] + basicUnitSymbol + ")";
-                inputUnitPicker.Items.Add(key);
-                resultUnitPicker.Items.Add(key);
-
-                Units.Add(key, Convert.ToDouble(NumUnits[i, 2]));
-            }
-
-            int j = 0, k = 0;
+            int j = 0;
             foreach (var i in OtherUnits[Title])
+                while (true)
+                    if (i.Value < Convert.ToDouble(NumUnits[j, 2]) || j == 22)
+                    {
+                        AddKey(i.Key, i.Value);
+                        break;
+                    }
+                    else
+                    {
+                        AddKey(NumUnits[j, 0] + basicUnitName + NumUnits[j, 1] + basicUnitSymbol + ")", Convert.ToDouble(NumUnits[j, 2]));
+                        ++j;
+                    }
+            while (j != 22)
             {
-                for (; j != 22 + OtherUnits[Title].Count && i.Value >= Convert.ToDouble(NumUnits[j, 2]); ++j) { }
-
-                inputUnitPicker.Items.Insert(j + k, i.Key);
-                resultUnitPicker.Items.Insert(j + k, i.Key);
-
-                Units.Add(i.Key, i.Value);
-
-                ++k;
+                AddKey(NumUnits[j, 0] + basicUnitName + NumUnits[j, 1] + basicUnitSymbol + ")", Convert.ToDouble(NumUnits[j, 2]));
+                ++j;
             }
+        }
+        public void AddKey(string key, double value)
+        {
+            inputUnitPicker.Items.Add(key);
+            resultUnitPicker.Items.Add(key);
+            Units.Add(key, value);
         }
 
         private void inputEntry_TextChanged(object sender, TextChangedEventArgs e)

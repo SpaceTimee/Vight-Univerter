@@ -7,14 +7,14 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="SpaceTime.Vight.Univerter"
+    Name="Vight-Univerter-Package"
     Publisher="CN=Space Time"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="ec0cc741-fd3e-485c-81be-68815c480690" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>Vight Univerter</DisplayName>
+    <DisplayName>Vight Univerter Package</DisplayName>
     <PublisherDisplayName>Space Time</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
