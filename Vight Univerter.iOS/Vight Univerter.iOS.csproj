@@ -65,6 +65,9 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <AppExtensionDebugBundleId />
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Vight Univerter Logo.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
@@ -135,5 +138,8 @@
       <Project>{D6B5BBE9-0897-49AC-90E3-B477627D1BB9}</Project>
       <Name>Vight Univerter</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Vight Univerter Logo.ico" />
   </ItemGroup>
 </Project>

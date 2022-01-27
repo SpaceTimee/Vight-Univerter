@@ -5,7 +5,7 @@
 ## 自我介绍:
 **Vight Univerter**: 一只基于**Xamarin**框架的轻量级单位转换器
 
-适用平台: **Android5.1+ / Windows10**
+适用平台: **Android 5.1+ / Windows 10**
 
 ## 注意事项:
 1. Vight Univerter仍处于开发阶段，但每个正式版发布前会尽量确保其稳定可用

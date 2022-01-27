@@ -1,26 +1,27 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
-    <ApplicationIcon>Vight Univerter Logo 256x256.ico</ApplicationIcon>
+    <ApplicationIcon>Vight Univerter Logo.ico</ApplicationIcon>
     <SignAssembly>false</SignAssembly>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>1.0.0</Version>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Version>0</Version>
     <Authors>Space Time</Authors>
     <Company>Space Time</Company>
-    <PackageIcon>Vight Univerter Logo 256x256.png</PackageIcon>
+    <PackageIcon></PackageIcon>
     <PackageIconUrl />
-    <NeutralLanguage>zh-CN</NeutralLanguage>
-    <PackageReleaseNotes>~</PackageReleaseNotes>
-    <Copyright>Copyright ©  2077</Copyright>
-    <Description>~</Description>
-    <PackageLicenseFile>Vight Univerter Privacy Policy.txt</PackageLicenseFile>
-    <PackageProjectUrl>https://www.spacetimee.xyz</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/SpaceTimee/Vight-Univerter</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
+    <NeutralLanguage></NeutralLanguage>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <Copyright></Copyright>
+    <Description></Description>
+    <PackageLicenseFile></PackageLicenseFile>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl></RepositoryUrl>
+    <RepositoryType></RepositoryType>
     <PackageId>SpaceTime.Vight.Univerter</PackageId>
-    <PackageTags>SpaceTime;Vight;Note;Vight-Univerter</PackageTags>
+    <PackageTags></PackageTags>
+    <Product></Product>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -34,8 +35,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2083" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -51,16 +52,5 @@
     <EmbeddedResource Update="Pages\TabPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="C:\Users\Space Time\Desktop\Vight Univerter\Vight Univerter Logo 0.0.0\Vight Univerter Logo 256x256.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-    <None Include="C:\Users\Space Time\Desktop\Vight Univerter\Vight Univerter Privacy Policy.txt">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
   </ItemGroup>
 </Project>
