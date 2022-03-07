@@ -7,18 +7,18 @@
           BackgroundColor="{AppThemeBinding White,Light=White,Dark=Black}"
           IsTabStop="False">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="128"/>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="128" />
         </Grid.ColumnDefinitions>
         <Entry x:Name="inputEntry" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center"
                Placeholder="[初始值]" FontSize="19" Keyboard="Numeric" TextColor="{AppThemeBinding Black,Light=Black,Dark=White}"
                IsSpellCheckEnabled="False" IsTextPredictionEnabled="False"
-               TextChanged="inputEntry_TextChanged"/>
+               TextChanged="inputEntry_TextChanged" />
         <Picker x:Name="inputUnitPicker" Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center"
                 TextColor="{AppThemeBinding Black,Light=Black,Dark=White}"
                 SelectedIndexChanged="inputUnitPicker_SelectedIndexChanged">
@@ -26,13 +26,13 @@
                 <OnPlatform x:TypeArguments="x:String"
                             Android="[初始单位]"
                             iOS="[初始单位]"
-                            WinPhone=""/>
+                            WinPhone="" />
             </Picker.Title>
         </Picker>
         <Label FontSize="19" Grid.Row="1" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
-               Text="=" ScaleX="2" TextColor="{AppThemeBinding Black,Light=Black,Dark=White}"/>
+               Text="=" ScaleX="2" TextColor="{AppThemeBinding Black,Light=Black,Dark=White}" />
         <Label x:Name="resultLabel" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
-               Text="[目标值]" FontSize="19" TextColor="OrangeRed" LineBreakMode="MiddleTruncation"/>
+               Text="[目标值]" FontSize="19" TextColor="OrangeRed" LineBreakMode="MiddleTruncation" />
         <Picker x:Name="resultUnitPicker" Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center"
                 TextColor="{AppThemeBinding Black,Light=Black,Dark=White}"
                 SelectedIndexChanged="resultUnitPicker_SelectedIndexChanged">
@@ -40,7 +40,7 @@
                 <OnPlatform x:TypeArguments="x:String"
                             Android="[目标单位]"
                             iOS="[目标单位]"
-                            WinPhone=""/>
+                            WinPhone="" />
             </Picker.Title>
         </Picker>
     </Grid>
