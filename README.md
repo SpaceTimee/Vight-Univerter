@@ -3,6 +3,8 @@
 </br>
 
 ## 自我介绍:
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSpaceTimee%2FVight-Univerter.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FSpaceTimee%2FVight-Univerter?ref=badge_shield)
+
 **Vight Univerter**: 一只基于**Xamarin**框架的轻量级单位转换器
 
 适用平台: **Android 5.1+ / Windows 10**
@@ -32,3 +34,7 @@
 **Zeus6_6@163.com**
 
 •ᴗ•
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSpaceTimee%2FVight-Univerter.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FSpaceTimee%2FVight-Univerter?ref=badge_large)
