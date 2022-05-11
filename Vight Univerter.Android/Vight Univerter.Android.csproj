@@ -70,9 +70,11 @@
     <AndroidSupportedAbis>armeabi-v7a</AndroidSupportedAbis>
     <AndroidKeyStore>true</AndroidKeyStore>
     <AndroidSigningKeyStore>C:\Users\Space Time\AppData\Local\Xamarin\Mono for Android\Keystore\Space Time\Space Time.keystore</AndroidSigningKeyStore>
-    <AndroidSigningStorePass></AndroidSigningStorePass>
+    <AndroidSigningStorePass>
+    </AndroidSigningStorePass>
     <AndroidSigningKeyAlias>Space Time</AndroidSigningKeyAlias>
-    <AndroidSigningKeyPass></AndroidSigningKeyPass>
+    <AndroidSigningKeyPass>
+    </AndroidSigningKeyPass>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
