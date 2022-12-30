@@ -18,10 +18,10 @@
         <Entry x:Name="inputEntry" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center"
                Placeholder="[初始值]" FontSize="19" Keyboard="Numeric" TextColor="{AppThemeBinding Black,Light=Black,Dark=White}"
                IsSpellCheckEnabled="False" IsTextPredictionEnabled="False"
-               TextChanged="inputEntry_TextChanged" />
+               TextChanged="InputEntry_TextChanged" />
         <Picker x:Name="inputUnitPicker" Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center"
                 TextColor="{AppThemeBinding Black,Light=Black,Dark=White}"
-                SelectedIndexChanged="inputUnitPicker_SelectedIndexChanged">
+                SelectedIndexChanged="InputUnitPicker_SelectedIndexChanged">
             <Picker.Title>
                 <OnPlatform x:TypeArguments="x:String"
                             Android="[初始单位]"
@@ -35,7 +35,7 @@
                Text="[目标值]" FontSize="19" TextColor="OrangeRed" LineBreakMode="MiddleTruncation" />
         <Picker x:Name="resultUnitPicker" Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center"
                 TextColor="{AppThemeBinding Black,Light=Black,Dark=White}"
-                SelectedIndexChanged="resultUnitPicker_SelectedIndexChanged">
+                SelectedIndexChanged="ResultUnitPicker_SelectedIndexChanged">
             <Picker.Title>
                 <OnPlatform x:TypeArguments="x:String"
                             Android="[目标单位]"

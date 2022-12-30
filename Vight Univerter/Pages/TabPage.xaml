@@ -3,18 +3,18 @@
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:local="using:Vight_Univerter"
             x:Class="Vight_Univerter.TabPage">
-    <local:UniverterPage Title="长度" basicUnitName="米" basicUnitSymbol="m" />
+    <local:UniverterPage Title="长度" BasicUnitName="米" BasicUnitSymbol="m" />
     <!--已完成-->
-    <local:UniverterPage Title="质量" basicUnitName="克" basicUnitSymbol="g" />
+    <local:UniverterPage Title="质量" BasicUnitName="克" BasicUnitSymbol="g" />
     <!--差盎司和一些中国古代计量单位-->
-    <local:UniverterPage Title="时间" basicUnitName="秒" basicUnitSymbol="s" />
+    <local:UniverterPage Title="时间" BasicUnitName="秒" BasicUnitSymbol="s" />
     <!--已完成-->
-    <local:UniverterPage Title="电流" basicUnitName="安" basicUnitSymbol="A" />
+    <local:UniverterPage Title="电流" BasicUnitName="安" BasicUnitSymbol="A" />
     <!--已完成-->
-    <local:UniverterPage Title="量" basicUnitName="摩" basicUnitSymbol="mol" />
+    <local:UniverterPage Title="量" BasicUnitName="摩" BasicUnitSymbol="mol" />
     <!--已完成-->
-    <local:UniverterPage Title="温度" basicUnitName="开" basicUnitSymbol="K" />
-    <local:UniverterPage Title="光强" basicUnitName="坎" basicUnitSymbol="cd" />
+    <local:UniverterPage Title="温度" BasicUnitName="开" BasicUnitSymbol="K" />
+    <local:UniverterPage Title="光强" BasicUnitName="坎" BasicUnitSymbol="cd" />
     <!--已完成-->
     <local:AboutPage x:Name="aboutPage" Title="关于" />
 </TabbedPage>

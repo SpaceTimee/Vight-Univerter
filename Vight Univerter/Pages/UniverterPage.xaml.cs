@@ -7,8 +7,8 @@ namespace Vight_Univerter
 {
     public partial class UniverterPage : ContentPage
     {
-        public string basicUnitName { get; set; } = "";
-        public string basicUnitSymbol { get; set; } = "";
+        public string BasicUnitName { get; set; } = "";
+        public string BasicUnitSymbol { get; set; } = "";
         private readonly Dictionary<string, double> Units = new Dictionary<string, double>();
         private static readonly object[,] NumUnits = new object[,]
         {
@@ -137,12 +137,12 @@ namespace Vight_Univerter
                     }
                     else
                     {
-                        AddKey(NumUnits[j, 0] + basicUnitName + NumUnits[j, 1] + basicUnitSymbol + ")", Convert.ToDouble(NumUnits[j, 2]));
+                        AddKey(NumUnits[j, 0] + BasicUnitName + NumUnits[j, 1] + BasicUnitSymbol + ")", Convert.ToDouble(NumUnits[j, 2]));
                         ++j;
                     }
             while (j != 22)
             {
-                AddKey(NumUnits[j, 0] + basicUnitName + NumUnits[j, 1] + basicUnitSymbol + ")", Convert.ToDouble(NumUnits[j, 2]));
+                AddKey(NumUnits[j, 0] + BasicUnitName + NumUnits[j, 1] + BasicUnitSymbol + ")", Convert.ToDouble(NumUnits[j, 2]));
                 ++j;
             }
         }
@@ -153,15 +153,15 @@ namespace Vight_Univerter
             Units.Add(key, value);
         }
 
-        private void inputEntry_TextChanged(object sender, TextChangedEventArgs e)
+        private void InputEntry_TextChanged(object sender, TextChangedEventArgs e)
         {
             Univert();
         }
-        private void inputUnitPicker_SelectedIndexChanged(object sender, EventArgs e)
+        private void InputUnitPicker_SelectedIndexChanged(object sender, EventArgs e)
         {
             Univert();
         }
-        private void resultUnitPicker_SelectedIndexChanged(object sender, EventArgs e)
+        private void ResultUnitPicker_SelectedIndexChanged(object sender, EventArgs e)
         {
             Univert();
         }

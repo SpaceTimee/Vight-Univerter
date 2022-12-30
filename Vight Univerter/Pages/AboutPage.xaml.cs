@@ -17,37 +17,18 @@ namespace Vight_Univerter
 
         private async void MainPageLabel_Tapped(object sender, System.EventArgs e)
         {
-            try
-            {
-                await Browser.OpenAsync("https://www.spacetimee.xyz/", BrowserLaunchMode.External);
-            }
-            catch
-            {
-                return;
-            }
+            try { await Browser.OpenAsync("https://www.spacetimee.xyz/", BrowserLaunchMode.External); }
+            catch { return; }
         }
         private async void OpenSourceLabel_Tapped(object sender, System.EventArgs e)
         {
-            try
-            {
-                await Browser.OpenAsync("https://github.com/SpaceTimee/Vight-Univerter", BrowserLaunchMode.External);
-            }
-            catch
-            {
-                return;
-            }
+            try { await Browser.OpenAsync("https://github.com/SpaceTimee/Vight-Univerter", BrowserLaunchMode.External); }
+            catch { return; }
         }
         private async void EmailLabel_Tapped(object sender, System.EventArgs e)
         {
-            try
-            {
-                var emailMessage = new EmailMessage("", "", "Zeus6_6@163.com");
-                await Email.ComposeAsync(emailMessage);
-            }
-            catch
-            {
-                return;
-            }
+            try { await Email.ComposeAsync(new EmailMessage("", "", "Zeus6_6@163.com")); }
+            catch { return; }
         }
     }
 }
